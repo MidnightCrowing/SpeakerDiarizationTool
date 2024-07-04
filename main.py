@@ -95,7 +95,7 @@ def main():
         for wav_file in speaker['list']:
             shutil.copy(wav_file, speaker_folder)
 
-    print("Files have been successfully copied to the output directory.")
+    print(f'Files have been successfully copy to the output directory: {os.path.abspath(output_path)}')
 
 
 if __name__ == '__main__':
